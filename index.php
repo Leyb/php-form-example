@@ -3,10 +3,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>prova Corujao</title>
+	<title>Leyb - AJAX form</title>
 	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,12 +18,12 @@
                 <button class="createMore btn btn-primary btn-lg" data-toggle="modal"
                         data-target="#myModal">Create Contact</button>
                 <button id="addCompanyBtn" class="createMore btn btn-info btn-lg">Add company name</button>
-                <form id="addCompany"class="displayNone">
+                <form id="addCompany" class="displayNone">
                     <input id="companyName" name="companyName" class=" btn btn-info">
                     <input type="submit" value="Add!" class=" btn btn-info">
                 </form>
             </div>
-                <table id="myTable"class="table table-striped table-bordered">
+                <table id="myTable" class="table table-striped table-bordered">
 				<tr class="tableRow">
 					<th>Company Name</th>
 					<th>Company Address</th>
@@ -35,7 +34,7 @@
 				</tr>
                                 <?php
                                 foreach($row as $line): ?>
-                                        <tr class="tableRow"data-contactId="<?=$line['id']?>">
+                                        <tr class="tableRow" data-contactId="<?=$line['id']?>">
                                                 <td><?=$line['companyName']?></td>
                                                 <td><?=$line['companyAddress']?></td>
                                                 <td><?=$line['name']?></td>
@@ -49,6 +48,7 @@
                                                             data-phone="<?=$line['phone']?>"
                                                             data-notes="<?=$line['notes']?>"
                                                             >EDIT</button>
+                                                    <button class="btn btn-danger">X</button>
                                                 </td>
                                         </tr>
                                 <?php endforeach;?>
@@ -86,9 +86,9 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 	<!-- jquery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
 	<!-- Bootstrap -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js""></script>
 	<script src='js/global.js'></script>
 	<!-- <script src='js/global.min.js'></script> -->
 </body>

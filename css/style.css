@@ -37,7 +37,7 @@ html {
     margin: 10px 0px; }
     #mainDiv .buttonsDiv form#addCompany {
       display: inline-block;
-      border: 1px solid;
+      /*border: 1px solid;*/
       padding: 6px;
       border-radius: 10px; }
       #mainDiv .buttonsDiv form#addCompany input:first-child {
