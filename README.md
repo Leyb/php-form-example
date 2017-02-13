@@ -1,0 +1,1 @@
+This is just a AJAX example of a form being worked with PHP.
