@@ -1,0 +1,18 @@
+1) organizar DB
+1a - foreign Key, 1-to-...?
+
+2) organizar PHP
+2a - fazer virar classes OOP/MVC (se possivel, com design patterns[singleton?])
+2b - inserir form de companies com classes (ajax)
+
+3) SCSS
+3a - pq import nao funfa?
+
+4) funcionalidade
+4a - botao de delete
+
+
+5) outros
+ - dar um titulo pro sisteminha
+ - deploy 
+ - jogar pro github

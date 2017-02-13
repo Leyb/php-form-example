@@ -1,0 +1,86 @@
+*{
+	box-sizing:border-box;
+}
+
+$mobileBig: 500px;
+$tablet: 760px;
+$desktop: 1024;
+
+.show-mobile{
+
+	@media (min-width: $tablet) {
+		display: none;
+	}
+}
+.show-tablet{
+
+		display: none;
+	@media (min-width: $tablet) {
+		display: block;
+		
+	}
+}
+.show-desktop{
+
+		display: none;
+	@media (min-width: $desktop) {
+		display: block;
+		
+	}
+}
+
+.flexCol{
+	display: flex;
+	flex-direction: column;
+}
+.flexRow{
+	display: flex;
+	flex-direction: row;
+}
+.displayNone{
+    display: none !important;
+}
+html{
+	// background-color: black;
+	font-size: 18px;
+}
+header{}
+
+#mainDiv{
+    padding: 5px 15px;
+    
+    .buttonsDiv{
+        margin: 10px 0px;
+        form#addCompany {
+            display: inline-block;
+            border: 1px solid;
+            padding: 6px;
+            border-radius: 10px;
+            
+            input:first-child{
+                background: none;
+            }
+        }
+    }
+	table{
+
+		border-collapse: collapse;
+		.tableRow{
+
+			> th, >td{
+
+/*				margin: 5px 10px;
+				border: 1px solid black;*/
+			}
+		}
+	}
+}
+
+#myForm{
+    input, select, textarea {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box; }
+
+@media (min-width: 760px) {
+  .show-mobile {
+    display: none; } }
+
+.show-tablet {
+  display: none; }
+  @media (min-width: 760px) {
+    .show-tablet {
+      display: block; } }
+
+.show-desktop {
+  display: none; }
+  @media (min-width: 1024) {
+    .show-desktop {
+      display: block; } }
+
+.flexCol {
+  display: flex;
+  flex-direction: column; }
+
+.flexRow {
+  display: flex;
+  flex-direction: row; }
+
+.displayNone {
+  display: none !important; }
+
+html {
+  font-size: 18px; }
+
+#mainDiv {
+  padding: 5px 15px; }
+  #mainDiv .buttonsDiv {
+    margin: 10px 0px; }
+    #mainDiv .buttonsDiv form#addCompany {
+      display: inline-block;
+      border: 1px solid;
+      padding: 6px;
+      border-radius: 10px; }
+      #mainDiv .buttonsDiv form#addCompany input:first-child {
+        background: none; }
+  #mainDiv table {
+    border-collapse: collapse; }
+    #mainDiv table .tableRow > th, #mainDiv table .tableRow > td {
+      /*				margin: 5px 10px;
+      				border: 1px solid black;*/ }
+
+#myForm input, #myForm select, #myForm textarea {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */
